@@ -87,14 +87,6 @@ public class LiteraturaApplication {
 				System.out.println("Nombre: " + autor.getNombre());
 				System.out.println("Año de nacimiento: " + autor.getAnioNacimiento());
 				System.out.println("Año de muerte: " + (autor.getAnioMuerte() != null ? autor.getAnioMuerte() : "N/A"));
-				System.out.println("Libros:");
-				if (autor.getLibros() != null && !autor.getLibros().isEmpty()) {
-					for (Libro libro : autor.getLibros()) {
-						System.out.println(" - " + libro.getTitulo());
-					}
-				} else {
-					System.out.println("   No hay libros asociados.");
-				}
 				System.out.println("-----------------------------");
 			}
 		}
